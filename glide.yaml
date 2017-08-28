@@ -1,0 +1,4 @@
+package: postdata-replay
+import:
+- package: github.com/satyrius/gonx
+  version: v1.3.0
