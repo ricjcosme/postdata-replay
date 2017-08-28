@@ -31,7 +31,6 @@ func CheckErr(err error) {
 
 var Format string
 var InputLogFile string
-var logFile string
 var prefix string
 var ratio int64
 var Debug bool
@@ -44,7 +43,6 @@ var wg sync.WaitGroup
 func init() {
 	flag.StringVar(&Format, "format", `$remote_addr - - [$time_local] "$request" $status $request_length $body_bytes_sent $request_time $payload"$t_size" $read_time $gen_time`, "Nginx log format")
 	flag.StringVar(&InputLogFile, "file", "-", "Log file name to read. Read from STDIN if file name is '-'")
-	flag.StringVar(&logFile, "log", "-", "File to report timings to, default is stdout")
 	flag.StringVar(&prefix, "prefix", "http://localhost:8080", "URL prefix to query")
 	flag.Int64Var(&ratio, "ratio", 1, "Replay speed ratio, higher means faster replay speed")
 	flag.BoolVar(&Debug, "debug", false, "Print extra debugging information")
