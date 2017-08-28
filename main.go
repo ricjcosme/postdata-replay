@@ -9,8 +9,8 @@ import (
 	"strings"
 	"compress/gzip"
 
-	"postdata-replay/nginx"
-	"postdata-replay/helpers"
+	"github.com/ricjcosme/postdata-replay/nginx"
+	"github.com/ricjcosme/postdata-replay/helpers"
 )
 
 func main() {

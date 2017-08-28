@@ -7,7 +7,7 @@ import (
 	"time"
 	"github.com/satyrius/gonx"
 
-	"postdata-replay/helpers"
+	"github.com/ricjcosme/postdata-replay/helpers"
 )
 
 const (
