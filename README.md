@@ -1,15 +1,16 @@
-# Replay NginX POSTDATA logs
+# Replay Nginx logs (GETs and POSTs)
+Based on https://github.com/Gonzih/log-replay
 
 ## Installation
 
 ```
-go get -u github.com/ricjcosme/log-replay
+go get -u github.com/ricjcosme/postdata-replay
 ```
 
 ## Usage
 
 ```
-Usage of log-replay:
+Usage of postdata-replay:
   -debug
     	Print extra debugging information
   -file string
@@ -36,7 +37,7 @@ tail -f /var/log/acces.log | postdata-replay --prefix http://staging-host --skip
 
 ## GET / POST
 
-Methods GET and POST are currently available on Nginx logs.
+Methods GET and POST are currently available for Nginx logs.
 
 ## License
 
